@@ -20,6 +20,12 @@ const Dashboard = () => {
           <li className="hover:bg-secondary font-semibold hover:text-white hover:rounded">
             <Link to="/dashboard/review">My Reviews</Link>
           </li>
+          <li className="hover:bg-secondary font-semibold hover:text-white hover:rounded">
+            <Link to="/dashboard/history">My History</Link>
+          </li>
+          <li className="hover:bg-secondary font-semibold hover:text-white hover:rounded">
+            <Link to="/dashboard/users">All Users</Link>
+          </li>
         </ul>
       </div>
     </div>
