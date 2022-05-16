@@ -1,11 +1,11 @@
-import React, { useEffect } from "react"
-import { useQuery } from "react-query"
-import Loading from "../Shared/Loading"
-import UserRow from "./UserRow"
+import React, { useEffect } from "react";
+import { useQuery } from "react-query";
+import Loading from "../Shared/Loading";
+import UserRow from "./UserRow";
 
 const Users = () => {
   const { data: users, isLoading, refetch } = useQuery("users", () =>
-    fetch("http://localhost:5000/user", {
+    fetch("https://stormy-gorge-82175.herokuapp.com/user", {
       method: "GET",
       headers: {
         authorization: `Bearer ${localStorage.getItem("accessToken")}`,

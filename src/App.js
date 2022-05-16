@@ -10,6 +10,7 @@ import MyAppointments from "./Pages/Dashboard/MyAppointments"
 import MyHistory from './Pages/Dashboard/MyHistory'
 import MyReview from "./Pages/Dashboard/MyReview"
 import Users from "./Pages/Dashboard/Users"
+import Contact from "./Pages/Home/Contact"
 import Home from './Pages/Home/Home'
 import Login from "./Pages/Login/Login"
 import RequireAdmin from "./Pages/Login/RequireAdmin"
@@ -24,6 +25,7 @@ function App() {
     <Routes>
         <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />
+        <Route path="contact" element={<Contact />} />
         <Route path="login" element={<Login />} />
         <Route path="signup" element={<SignUp />} />
         <Route path="appointment" element={<RequireAuth>
