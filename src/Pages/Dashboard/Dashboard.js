@@ -28,9 +28,18 @@ const Dashboard = () => {
           <li className="hover:bg-secondary font-semibold hover:text-white hover:rounded">
             <Link to="/dashboard/history">My History</Link>
           </li>
-         { admin && <li className="hover:bg-secondary font-semibold hover:text-white hover:rounded">
+         { admin && <>
+          <li className="hover:bg-secondary font-semibold hover:text-white hover:rounded">
             <Link to="/dashboard/users">All Users</Link>
-          </li>}
+          </li>
+          <li className="hover:bg-secondary font-semibold hover:text-white hover:rounded">
+            <Link to="/dashboard/addDoctor">Add a Doctor</Link>
+          </li>
+          <li className="hover:bg-secondary font-semibold hover:text-white hover:rounded">
+            <Link to="/dashboard/manageDoctor">Manage Doctors</Link>
+          </li>
+
+         </>}
         </ul>
       </div>
     </div>
