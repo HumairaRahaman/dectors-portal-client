@@ -1,7 +1,7 @@
-import React, { useEffect } from "react"
-import { useQuery } from "react-query"
-import Loading from "../Shared/Loading"
-import UserRow from "./UserRow"
+import React, { useEffect } from "react";
+import { useQuery } from "react-query";
+import Loading from "../Shared/Loading";
+import UserRow from "./UserRow";
 
 const Users = () => {
   const { data: users, isLoading, refetch } = useQuery("users", () =>
